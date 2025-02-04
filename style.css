@@ -1,0 +1,71 @@
+body {
+   font-family: sans-serif;
+   background-color: #F9D689; /* Light yellow background */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   margin: 0;
+}
+
+.contact-container {
+   background-color: white;
+   padding: 40px;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   width: 90%; /* Responsive width */
+   max-width: 600px; /* Maximum width on larger screens */
+}
+
+h2 {
+   text-align: center;
+   color: #973131; /* Dark red heading */
+}
+
+.form-group {
+   margin-bottom: 20px;
+}
+
+label {
+   display: block;
+   margin-bottom: 5px;
+   color: #bb6e0ae8; /* Brown label color */
+}
+
+input,
+textarea {
+   width: calc(100% - 12px); /* Account for padding and border */
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box; /* Include padding in width calculation */
+}
+textarea {
+   height:120px;
+}
+button {
+   background-color:  #bb6e0ae8; /* Brown button */
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   width: 100%;
+   transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+button:hover {
+   background-color: #973131; /* Darker red on hover */
+}
+
+.error-message {
+   color: red;
+   margin-top: 5px;
+   display: none; /* Initially hidden */
+}
+/* Responsive design adjustments */
+@media (max-width: 400px) {
+   .contact-container {
+       padding: 20px;
+   }
+}
